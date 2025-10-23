@@ -6,6 +6,9 @@
 # generated directory
 **/generated
 
+# solution directory
+/Comtrade_PCF_Solution
+
 # output directory
 /out
 
