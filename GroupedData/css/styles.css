@@ -1,0 +1,178 @@
+.GroupByCTRL-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #f8fafc00;
+  font-family: Segoe UI, Arial, sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+ .data-scrollable{
+  flex: 1;
+  overflow: auto;
+}
+
+ .ms-List {
+  width: fit-content;
+  min-width: 100%;
+}
+
+
+ .ms-DetailsRow-cellCheck,
+ .ms-DetailsHeader-cellIsCheck {
+  flex: 0 0 48px !important;
+  min-width: 48px !important;
+  max-width: 48px !important;
+  padding: 0px !important;
+  display: flex;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+/* .ms-DetailsHeader-cellIsCheck {
+  margin-right: 150px;
+}  */
+
+/* Header row */
+ .ms-DetailsHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 2;
+  border-bottom: 1px solid #e1e1e1;
+  width: fit-content;
+  min-width: 100%;
+  min-height: 44px;
+  padding-top: 0px;
+}
+
+/* Header cells */
+.ms-DetailsHeader-cell,
+ .ms-DetailsRow-cell {
+  flex: 1;
+  box-sizing: border-box;
+  padding-left: 12px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ms-DetailsRow-cell {
+  flex: 1 1 0;
+  min-width: 0;
+  background-color: white; /* ili tvoja default boja */
+}
+
+.ms-DetailsHeader-cell:last-child,
+.ms-DetailsRow-cell:last-child {
+  border-right: none;
+}
+
+/* Group header */
+.ms-GroupHeader {
+  background: #f9f9f9;
+  border-bottom: 1px solid #e1e1e1;
+  position: sticky;
+  top: 44px;
+  z-index: 1;
+  font-size: 15px;
+  width: fit-content;
+  min-width: 100%;
+}
+
+.ms-GroupHeader-title {
+  color: #333;
+  font-weight: 600;
+}
+
+.ms-DetailsRow {
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  min-width: 100% !important;
+  width: fit-content;
+}
+
+.ms-DetailsRow-fields {
+  width: 100%;
+}
+
+.ms-DetailsRow:hover {
+  background-color: #ffffff;
+}
+
+ .ms-DetailsRow-cell:hover {
+  background-color: #e8e7e7;
+}
+
+.ms-DetailsHeader-cell:hover {
+  border: 2px solid #7083c2;
+}
+
+.ms-DetailsRow.is-selected {
+  background-color: #eff3ff !important;
+}
+
+.groupby-footer-bar {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  min-height: 48px;
+  z-index: 10;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.groupby-footer-bar .footer-info {
+  color: #444;
+  font-size: 14px;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.pagination-btn {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, background 0.2s;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #f3f9fd;
+  box-shadow: 0 4px 16px rgba(0,120,212,0.12);
+}
+
